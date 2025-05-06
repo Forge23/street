@@ -1,0 +1,40 @@
+---
+const { title, image, description } = Astro.props;
+---
+<div class="category">
+    <img src={image} alt={title} class="category-image" />
+    <h3 class="category-title">{title}</h3>
+    <p class="category-description">{description}</p>
+</div>
+
+<style>
+    .category {
+        text-align: center;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s;
+    }
+
+    .category:hover {
+        transform: scale(1.05);
+    }
+
+    .category-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .category-title {
+        font-size: 1.5em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .category-description {
+        font-size: 1em;
+        color: #666;
+        padding: 0 10px;
+    }
+</style>

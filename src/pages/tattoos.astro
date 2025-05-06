@@ -1,0 +1,70 @@
+---
+layout: "../layouts/MainLayout.astro"
+title: "Tattoos - Cholo E-commerce"
+---
+
+<section id="tattoos">
+    <h1>Tattoo Collection</h1>
+    <p>Explore our unique collection of tattoos that embody the cholo culture. Each design tells a story and represents a lifestyle.</p>
+    
+    <div class="tattoo-gallery">
+        <div class="tattoo-item">
+            <img src="/assets/images/tattoo1.jpg" alt="Tattoo Design 1" />
+            <h2>Tattoo Design 1</h2>
+            <p>Description of Tattoo Design 1.</p>
+        </div>
+        <div class="tattoo-item">
+            <img src="/assets/images/tattoo2.jpg" alt="Tattoo Design 2" />
+            <h2>Tattoo Design 2</h2>
+            <p>Description of Tattoo Design 2.</p>
+        </div>
+        <div class="tattoo-item">
+            <img src="/assets/images/tattoo3.jpg" alt="Tattoo Design 3" />
+            <h2>Tattoo Design 3</h2>
+            <p>Description of Tattoo Design 3.</p>
+        </div>
+        <!-- Add more tattoo items as needed -->
+    </div>
+</section>
+
+<style>
+    #tattoos {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .tattoo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .tattoo-item {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        width: 200px;
+        text-align: left;
+    }
+
+    .tattoo-item img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+
+    p {
+        font-size: 0.9em;
+        color: #555;
+    }
+</style>

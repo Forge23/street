@@ -1,0 +1,17 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<main>
+    <Navbar />
+    <slot />
+    <Footer />
+</main>
+
+<style>
+    main {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+</style>
